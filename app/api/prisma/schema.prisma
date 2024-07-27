@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// roles
+
+enum Role {
+  ADMIN
+  USER
+  DOCTOR
+}
+
+// model utilisateur
+
+model User {
+  userId        String   @id @default(uuid()) @map("user_id")
+  userName      String   @map("user_name")
+  userEmail     String   @unique @map("user_email")
+  userAvatarURL String?  @map("user_avatar_url")
+  userPassword  String   @map("user_password")
+  created       DateTime @default(now())
+  role          Role     @default(USER)
+
+  @@map("user")
+}
+
+// model docteur
+
+model Doctor {
+  doctorId          String   @id @unique @default(uuid()) @map("doctor_id")
+  doctorName        String   @map("doctor_name")
+  doctorEmail       String   @unique @map("doctor_email")
+  doctorDescription String   @map("doctor_description")
+  doctorPhoneNumber String   @map("doctor_phone_number")
+  created           DateTime @default(now())
+  doctorPassword    String   @map("doctor_password")
+  role              Role     @default(DOCTOR)
+
+  @@map("doctor")
+}
+
+// model horaire
+
+model Horaire {
+  horaireId          String @id @unique @default(uuid()) @map("horaire_id")
+  horaireTitle       String @map("horaire_title")
+  horaireDescription String @map("horaire_description")
+  repetitionJour     Int    @map("repetition_jour")
+  heures             String
+
+  @@map("horaire")
+}
