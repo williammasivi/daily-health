@@ -37,6 +37,17 @@ export default function Sidebar() {
                      <span className="flex-1 ms-3 whitespace-nowrap">Pharmacy Locator</span>
                   </Link>
                </li>
+
+               <li>
+                  <Link to={'/medicationreminder'} className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                     <AiFillSetting
+                        fill="currentColor"
+                        size={24}
+                        className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                     />
+                     <span className="flex-1 ms-3 whitespace-nowrap">Medicaton Remender</span>
+                  </Link>
+               </li>
                <li>
                   <Link to={'/auth/login'} className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                      <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">

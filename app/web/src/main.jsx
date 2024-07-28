@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import PharmacyLocator from './pages/PharmacyLocator';
 import './css/index.css';
+import MedicationReminder from './pages/MedicationReminder';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/pharmacylocator',
         element: <PharmacyLocator />
+      },
+      {
+        path: '/medicationreminder',
+        element: <MedicationReminder />
       },
       {
         path: 'consultation',
