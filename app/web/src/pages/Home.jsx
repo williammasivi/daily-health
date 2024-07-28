@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FaUserNurse, FaMapMarkerAlt, FaPills } from 'react-icons/fa';
 import { AiFillSetting } from 'react-icons/ai';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
             <Link to="/medication-reminder" className="text-red-500 hover:underline mt-4 inline-block">Learn More</Link>
           </div>
         </section>
+        <Footer/>
       </main>
     </div>
   );
