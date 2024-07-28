@@ -2,29 +2,29 @@ import { FaWhatsapp, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="dark:text-gray-300 text-white py-6 bg-gradient-to-r from-gray-700 via-gray-900 to-gray-800 mt-32">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
-          <h3 className="text-xl font-semibold">Projet chef-d'œuvre</h3>
-          <p className="text-xs mt-1">Révolutionner la gestion de la santé en ligne</p>
+    <footer className="text-blue-700 py-8 bg-gradient-to-r text-blue-500 bg-white border-r border-gray-200 mt-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-12 lg:px-24">
+        <div className="mb-6 md:mb-0 text-center md:text-left">
+          <h3 className="text-2xl font-bold">daily-health</h3>
+          <p className="text-sm mt-2">Révolutionner la gestion de la santé en ligne</p>
         </div>
-        <div className="flex space-x-4">
-          <a href="https://wa.me/tonnumero" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors duration-300">
-            <FaWhatsapp size={20} />
+        <div className="flex space-x-8">
+          <a href="https://wa.me/tonnumero" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors duration-300">
+            <FaWhatsapp size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition-colors duration-300">
-            <FaLinkedin size={20} />
+          <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-colors duration-300">
+            <FaLinkedin size={24} />
           </a>
-          <a href="https://t.me/tonnomutilisateur" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors duration-300">
-            <FaTelegram size={20} />
+          <a href="https://t.me/tonnomutilisateur" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-300">
+            <FaTelegram size={24} />
           </a>
-          <a href="mailto:tonemail@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-red-500 transition-colors duration-300">
-            <FaEnvelope size={20} />
+          <a href="mailto:tonemail@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors duration-300">
+            <FaEnvelope size={24} />
           </a>
         </div>
       </div>
-      <div className="text-center mt-4 border-t border-gray-600 dark:text-gray-300">
-        <p className="text-xs">© 2024 daily-health. Tous droits réservés.</p>
+      <div className="text-center mt-8 border-t text-blue-700 pt-4">
+        <p className="text-sm">© 2024 daily-health. Tous droits réservés.</p>
       </div>
     </footer>
   );

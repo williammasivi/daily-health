@@ -16,11 +16,11 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-[20px]">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
             <FaUserNurse className="text-4xl text-blue-500 mb-4" />
             <h3 className="text-2xl font-bold mb-2">Consultation</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-center">
+            <p className="text-gray-700 text-blue-500 text-center">
               Get remote medical consultations from the comfort of your home.
             </p>
             <Link to="/consultation" className="text-blue-500 hover:underline mt-4 inline-block">Learn More</Link>
@@ -29,7 +29,7 @@ export default function Home() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
             <FaMapMarkerAlt className="text-4xl text-green-500 mb-4" />
             <h3 className="text-2xl font-bold mb-2">Pharmacy Locator</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-center">
+            <p className="text-gray-700 text-blue-500 text-center">
               Find nearby pharmacies quickly and easily.
             </p>
             <Link to="/pharmacy-locator" className="text-green-500 hover:underline mt-4 inline-block">Learn More</Link>
@@ -38,14 +38,15 @@ export default function Home() {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
             <FaPills className="text-4xl text-red-500 mb-4" />
             <h3 className="text-2xl font-bold mb-2">Medication Reminder</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-center">
+            <p className="text-gray-700 text-blue-500 text-center">
               Never miss a dose with our medication reminder feature.
             </p>
             <Link to="/medication-reminder" className="text-red-500 hover:underline mt-4 inline-block">Learn More</Link>
           </div>
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );
 }
+

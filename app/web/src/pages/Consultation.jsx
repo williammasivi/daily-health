@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 
 const doctors = [
    { id: 'doctor1', name: 'Dr. John Doe', specialty: 'Cardiologist', description: 'Specializes in heart health and cardiovascular diseases.' },
@@ -36,7 +37,7 @@ export default function Consultation() {
 
    return (
       <div className='flex flex-col min-h-screen bg-gray-100 dark:bg-gray-800'>
-         <header className="bg-indigo-600 text-white py-4 shadow-lg">
+         <header className="bg-indigo-500 text-white py-4 shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                <h1 className="text-3xl font-bold text-center">Medical Consultation</h1>
             </div>
@@ -74,7 +75,7 @@ export default function Consultation() {
                            </div>
                         </div>
                         <p className="text-gray-700 dark:text-gray-400 mb-4">{doctor.description}</p>
-                        <button className="bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Contact</button>
+                        <button className="bg-indigo-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Contact</button>
                      </div>
                   ))}
                </div>
@@ -86,11 +87,12 @@ export default function Consultation() {
                      </button>
                   )}
                   {(currentPage + 1) * itemsPerPage < doctors.length && (
-                     <button onClick={handleLoadMore} className="bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                     <button onClick={handleLoadMore} className="bg-indigo-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Load More
                      </button>
                   )}
                </div>
+               <Footer/>
             </div>
          </main>
       </div>
