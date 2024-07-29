@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col justify-center items-center">
       <main className="container mx-auto px-4 py-10">
         <section className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Projet chef-d'œuvre</h2>
+          <h2 className="text-4xl font-bold mb-4">Welcome to daily-health</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300">
             Revolutionizing online health management with features like remote medical consultations,
             pharmacy location, and medication reminders.
