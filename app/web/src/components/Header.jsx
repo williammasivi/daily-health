@@ -3,9 +3,15 @@ import { FaUserCircle } from 'react-icons/fa';
 
 export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [logoColor, setLogoColor] = useState('text-gray-800'); // Default color
 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleLogoClick = () => {
+    // Toggle color between two states (could be more colors)
+    setLogoColor(logoColor === 'text-gray-800' ? 'text-blue-500' : 'text-gray-800');
   };
 
   return (
@@ -16,7 +22,8 @@ export default function Header() {
           <img 
             src="/DAILY.png" 
             alt="Logo" 
-            className="h-10 w-10 transition-transform transform hover:scale-110 duration-300" 
+            className={`h-14 w-14 rounded-full transition-transform transform hover:scale-125 hover:rotate-6 duration-300 shadow-lg ${logoColor}`} 
+            onClick={handleLogoClick}
           />
         </div>
 
@@ -54,8 +61,8 @@ export default function Header() {
           )}
         </div>
       </div>
+      {/* Favicon */}
+      <link rel="icon" href="/DAILY.png" />
     </header>
   );
 }
-
-

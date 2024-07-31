@@ -54,6 +54,7 @@ const MedicationReminder = () => {
           </li>
         ))}
       </ul>
+    
     </div>
   );
 };

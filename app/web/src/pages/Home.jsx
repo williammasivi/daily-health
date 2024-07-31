@@ -32,7 +32,7 @@ export default function Home() {
             <p className="text-gray-700 text-blue-500 text-center">
               Find nearby pharmacies quickly and easily.
             </p>
-            <Link to="/pharmacy-locator" className="text-green-500 hover:underline mt-4 inline-block">Learn More</Link>
+            <Link to="/pharmacylocator" className="text-green-500 hover:underline mt-4 inline-block">Learn More</Link>
           </div>
 
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
@@ -41,7 +41,7 @@ export default function Home() {
             <p className="text-gray-700 text-blue-500 text-center">
               Never miss a dose with our medication reminder feature.
             </p>
-            <Link to="/medication-reminder" className="text-red-500 hover:underline mt-4 inline-block">Learn More</Link>
+            <Link to="/medicationreminder" className="text-red-500 hover:underline mt-4 inline-block">Learn More</Link>
           </div>
         </section>
         <Footer />
